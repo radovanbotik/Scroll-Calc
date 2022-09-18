@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Tenor+Sans&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  place-content: center;
+  font-family: "Tenor Sans";
+}
+body section {
+  position: relative;
+  height: 500vh;
+  display: flex;
+  place-content: center;
+}
+body section span:nth-child(1) {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+body section span:nth-child(2) {
+  display: block;
+  position: fixed;
+  top: 5%;
+  left: 0;
+}
+body section span:nth-child(3) {
+  display: block;
+  position: fixed;
+  top: 10%;
+  left: 0;
+}
+body section .bar {
+  height: inherit;
+  width: 2px;
+  background-color: black;
+}
+body section .bar span {
+  position: fixed;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}/*# sourceMappingURL=index.css.map */

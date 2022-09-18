@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo&family=Tenor+Sans&display=swap");
+
+$fonts: (
+  Archivo: "Archivo",
+  Tenor-Sans: "Tenor Sans",
+);
+@function useFont($font) {
+  @return map-get($fonts, $font);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  place-content: center;
+  font-family: useFont(Tenor-Sans);
+  section {
+    position: relative;
+    height: 500vh;
+    display: flex;
+    place-content: center;
+    span:nth-child(1) {
+      display: block;
+      position: fixed;
+      top: 0;
+      left: 0;
+    }
+    span:nth-child(2) {
+      display: block;
+      position: fixed;
+      top: 5%;
+      left: 0;
+    }
+    span:nth-child(3) {
+      display: block;
+      position: fixed;
+      top: 10%;
+      left: 0;
+    }
+
+    .bar {
+      height: inherit;
+      width: 2px;
+      background-color: black;
+      span {
+        position: fixed;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
