@@ -8,6 +8,7 @@ window.addEventListener("DOMContentLoaded", () => {
   span1.innerHTML = `window height is : `;
   span2.innerHTML = `window scroll is : `;
   span3.innerHTML = `document height is : `;
+  bar.innerHTML = `0% scrolled `;
   console.log(window.pageYOffset);
   window.addEventListener("scroll", () => {
     span1.innerHTML = `window height is : ${window.innerHeight}`;
@@ -20,5 +21,8 @@ window.addEventListener("DOMContentLoaded", () => {
       Math.floor(document.body.scrollHeight) - window.innerHeight;
     let percentage = Math.floor((window.pageYOffset / scrollableHeight) * 100);
     bar.innerHTML = `${percentage}% scrolled`;
+    if (percentage === 69) {
+      bar.innerHTML = '"Nice"';
+    }
   });
 });
