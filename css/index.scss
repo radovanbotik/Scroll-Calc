@@ -37,16 +37,11 @@ body {
       left: 0;
     }
 
-    .bar {
-      height: inherit;
-      width: 2px;
-      background-color: black;
-      span {
-        position: fixed;
-        top: 50%;
-        left: 55%;
-        transform: translate(-50%, -50%);
-      }
+    span:nth-child(4) {
+      position: fixed;
+      top: 50%;
+      left: 55%;
+      transform: translate(-50%, -50%);
     }
   }
 }

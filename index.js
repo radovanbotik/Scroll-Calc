@@ -2,7 +2,7 @@ window.addEventListener("DOMContentLoaded", () => {
   const span1 = document.querySelector("#span1");
   const span2 = document.querySelector("#span2");
   const span3 = document.querySelector("#span3");
-  const bar = document.querySelector(".bar span");
+  const bar = document.querySelector("#number");
 
   console.log(document.body.scrollHeight);
   span1.innerHTML = `window height is : `;
