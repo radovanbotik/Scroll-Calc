@@ -15,7 +15,6 @@ $fonts: (
 }
 
 body {
-  place-content: center;
   font-family: useFont(Tenor-Sans);
   section {
     position: relative;
@@ -23,19 +22,16 @@ body {
     display: flex;
     place-content: center;
     span:nth-child(1) {
-      display: block;
       position: fixed;
       top: 0;
       left: 0;
     }
     span:nth-child(2) {
-      display: block;
       position: fixed;
       top: 5%;
       left: 0;
     }
     span:nth-child(3) {
-      display: block;
       position: fixed;
       top: 10%;
       left: 0;
